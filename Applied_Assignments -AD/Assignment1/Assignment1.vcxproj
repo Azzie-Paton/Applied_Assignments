@@ -123,10 +123,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Applied_Assignments-master2-1\Applied_Assignments-master2-1\main.cpp" />
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="Course.cpp" />
     <ClCompile Include="Instructor.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="sqlite3.c" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="User.cpp" />

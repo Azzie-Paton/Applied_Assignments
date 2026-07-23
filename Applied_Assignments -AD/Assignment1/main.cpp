@@ -13,7 +13,7 @@ void executeSQL(sqlite3* DB, string sql);
 void insertStudent(sqlite3* DB, Student s)
 {
 	string sql =
-		"INSERT INTO STUDENT VALUES (" +
+		"INSERT OR IGNORE INTO STUDENT VALUES (" +
 		s.getId() + ", '" +
 		s.getFirst() + "', '" +
 		s.getLast() + "', " +
@@ -56,7 +56,7 @@ void insertAdmin(sqlite3* DB, Admin a)
 void insertCourse(sqlite3* DB, Course c)
 {
 	string sql =
-		"INSERT INTO COURSE VALUES (" +
+		"INSERT OR IGNORE INTO COURSE VALUES (" +
 		to_string(c.getCRN()) + ", '" +
 		c.getTitle() + "', '" +
 		c.getDepartment() + "', '" +
